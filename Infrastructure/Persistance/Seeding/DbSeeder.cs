@@ -20,8 +20,6 @@ namespace Infrastructure.Persistance.Seeding
                 new Grade { Id = 3, StudentId = 2, Subject = "Math", Score = 76.0 },
                 new Grade { Id = 4, StudentId = 2, Subject = "History", Score = 84.5 }
             );
-
-            DbSeeder.Seed(modelBuilder);
         }
     }
 }

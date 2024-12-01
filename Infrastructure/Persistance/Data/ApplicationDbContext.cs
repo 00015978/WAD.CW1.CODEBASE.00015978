@@ -1,4 +1,5 @@
 ﻿using Core.Entities;
+using Infrastructure.Persistance.Seeding;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Persistance.Data
@@ -52,6 +53,8 @@ namespace Infrastructure.Persistance.Data
                       .HasForeignKey(e => e.StudentId)
                       .OnDelete(DeleteBehavior.Cascade);
             });
+
+            DbSeeder.Seed(modelBuilder);
         }
     }
 }

@@ -11,6 +11,7 @@ namespace Application.Mapping
             // Entity to DTO
             CreateMap<Student, StudentDto>().ReverseMap();
             CreateMap<Grade, GradeDto>().ReverseMap();
+            CreateMap<Student, StudentCreateEditDto>().ReverseMap();
         }
     }
 }
